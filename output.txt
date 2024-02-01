@@ -1,5 +1,10 @@
-33333
-32223
-32123
-32223
-33333
+Iterating vector v5 using normal method: 
+100 100 100 100 100 200 
+Concept of Iterators: 
+use of begin(): 
+800
+100
+800
+use of end(): 
+200
+200
