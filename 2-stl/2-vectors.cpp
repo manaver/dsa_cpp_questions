@@ -61,5 +61,58 @@ int main()
     cout << "use of back(): " << endl;
     cout << v5.back() << endl;
 
+    // printing all elements using iterators
+    cout << "Iterating vector v5 using iterators: " << endl;
+    for (auto itr = v5.begin(); itr != v5.end(); itr++)
+    {
+        cout << *itr << " ";
+    }
+    cout << endl;
+    // printing all elements using foreach
+    cout << "Iterating vector v5 using foreach: " << endl;
+    for (auto itr : v5)
+    {
+        cout << itr << " ";
+    }
+    cout << endl;
+
+    // Erase function in vectors
+    cout << "erase() in vector" << endl;
+    vector<int> nVec = {1, 2, 3, 4, 5, 6, 7}; // creating new vector
+    for (auto itr : nVec)
+    {
+        cout << itr << " ";
+    }
+    cout << endl;
+    // deleting 4, 5, 6 from nVec
+    cout << "Erasing 4, 5, 6 from nVec" << endl;
+    nVec.erase(nVec.begin() + 3, nVec.begin() + 6);
+    for (auto itr : nVec)
+    {
+        cout << itr << " ";
+    }
+    cout << endl;
+
+    // insert()
+    vector<int> v6(2, 10);            //{100, 100}
+    v6.insert(v6.begin(), 5);         //{5, 100, 100}
+    v6.insert(v6.begin() + 1, 2, 40); //{5, 40, 40 100, 100}
+
+    // copying vector
+    vector<int> copyVec(2, 50);                            //{50, 50}
+    v6.insert(v6.begin(), copyVec.begin(), copyVec.end()); // {50, 50, 5, 40, 40, 100, 100}
+
+    cout << "Size of v6 is : " << v6.size() << endl;
+
+    // Poping last element
+    v6.pop_back();
+
+    // erasing entire vector
+    v6.clear();
+    cout << "Size of v6 after emptying it using clear(): " << v6.size() << endl;
+
+    // is the vector is empty? usnig empty()
+    cout << "Is the vector is empty: " << v6.empty() << endl;
+
     return 0;
 }

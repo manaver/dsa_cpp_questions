@@ -7,4 +7,16 @@ use of begin():
 800
 use of end(): 
 200
+use of back(): 
 200
+Iterating vector v5 using iterators: 
+800 100 100 100 100 100 200 
+Iterating vector v5 using foreach: 
+800 100 100 100 100 100 200 
+erase() in vector
+1 2 3 4 5 6 7 
+Erasing 4, 5, 6 from nVec
+1 2 3 7 
+Size of v6 is : 7
+Size of v6 after emptying it using clear(): 0
+Is the vector is empty: 1
